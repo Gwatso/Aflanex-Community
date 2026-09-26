@@ -360,7 +360,7 @@ final class Sso {
 		$link = sprintf(
 			'<p class="message"><a href="%1$s"><strong>%2$s</strong></a></p>',
 			esc_url( self::start_url() ),
-			/* translators: %s: identity provider name */
+			/* translators: %s: identity provider name, e.g. Erudify */
 			esc_html( sprintf( __( 'Continue with %s', 'aflanex-community' ), self::provider_name() ) )
 		);
 		return $link . $message;

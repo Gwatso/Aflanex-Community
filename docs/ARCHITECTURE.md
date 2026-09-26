@@ -178,6 +178,19 @@ wp plugin install <plugin.zip> --force && wp theme install <theme.zip> --force
 
 Delete the uploaded zips afterwards. Setup is idempotent (`aflx_setup_version`). Take a DB backup first (`wp db export`); pre-project backup: `~/aflanex-backups/pre-aflanex-2026-09-26.sql`.
 
+**Releases and updates (preferred):** the plugin declares `Update URI: https://github.com/Gwatso/Aflanex-Community`, and `src/Admin/Updater.php` reads the repository's latest GitHub release. To ship a version:
+
+1. Bump `Version` in `aflanex-community.php`, `AFLANEX_COMMUNITY_VERSION`, `Stable tag` and the changelog in `readme.txt`.
+2. Run `python dist/build.py`.
+3. On GitHub, create a release tagged `vX.Y.Z` and attach `dist/aflanex-community-plugin.zip` **with exactly that file name**.
+4. Within 6 hours (or immediately via Settings → Aflanex Community → Repair setup, which clears the cache), WordPress shows the update on the Plugins screen. It installs with one click, or automatically if auto-updates are enabled.
+
+Only assets under `https://github.com/Gwatso/Aflanex-Community/releases/download/` are accepted. The wordpress.org directory can never overwrite this plugin.
+
+**Admin screen:** Settings → Aflanex Community shows status (FluentCommunity, pages, Projects space, email delivery, SSO) and holds the settings (daily project limit, public stats threshold, opt-in data deletion on uninstall) plus the Repair setup tool.
+
+**Privacy:** suggested policy text appears under Settings → Privacy → Policy guide. Tools → Export/Erase Personal Data include Aflanex Community (portfolio details, identity links, project list). Erasure keeps projects the member owns, because they're shared content, and reports this to the admin.
+
 **Moving to community.aflanex.com:** change the site URL (standard WP search-replace), update FluentCommunity's portal settings if needed, and re-register the SSO redirect URI `https://<new-domain>/sso/callback/` in Erudify. No code changes.
 
 ## 13. Known limitations / next steps

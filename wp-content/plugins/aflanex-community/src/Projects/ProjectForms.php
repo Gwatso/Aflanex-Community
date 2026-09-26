@@ -13,7 +13,6 @@ defined( 'ABSPATH' ) || exit;
  */
 final class ProjectForms {
 
-	private const DAILY_LIMIT     = 5;
 	private const MAX_UPLOAD      = 5 * MB_IN_BYTES;
 	private const MAX_COLLABS     = 10;
 	private const MAX_LINKS       = 3;
@@ -24,6 +23,10 @@ final class ProjectForms {
 		add_action( 'admin_post_aflx_project_update', [ self::class, 'post_update' ] );
 		add_action( 'admin_post_nopriv_aflx_save_project', [ self::class, 'deny' ] );
 		add_action( 'admin_post_nopriv_aflx_project_update', [ self::class, 'deny' ] );
+	}
+
+	private static function daily_limit(): int {
+		return (int) \Aflanex\Community\Support\Settings::get( 'daily_project_limit' );
 	}
 
 	public static function deny(): void {
@@ -70,7 +73,7 @@ final class ProjectForms {
 			if ( ! $existing || ProjectPostType::POST_TYPE !== $existing->post_type || ! Projects::can_edit( $project_id, $user_id ) ) {
 				self::back( Pages::projects_url(), 'not_allowed' );
 			}
-		} elseif ( ! current_user_can( 'edit_others_posts' ) && self::created_today( $user_id ) >= self::DAILY_LIMIT ) {
+		} elseif ( ! current_user_can( 'edit_others_posts' ) && self::created_today( $user_id ) >= self::daily_limit() ) {
 			self::back( Pages::projects_url(), 'not_allowed' );
 		}
 
@@ -224,7 +227,7 @@ final class ProjectForms {
 				'author'         => $user_id,
 				'date_query'     => [ [ 'after' => '24 hours ago' ] ],
 				'fields'         => 'ids',
-				'posts_per_page' => self::DAILY_LIMIT + 1,
+				'posts_per_page' => self::daily_limit() + 1,
 				'no_found_rows'  => true,
 			]
 		);

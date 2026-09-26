@@ -34,7 +34,7 @@ $aflx_percent  = (int) round( 100 * $aflx_steps['done'] / max( 1, $aflx_steps['t
 				<h2 class="aflx-h3" id="aflx-gs-title"><?php esc_html_e( 'Getting started', 'aflanex-community' ); ?></h2>
 				<span class="aflx-small aflx-muted">
 					<?php
-					/* translators: 1: done, 2: total */
+					/* translators: 1: steps done, 2: total steps */
 					echo esc_html( sprintf( __( '%1$d of %2$d done', 'aflanex-community' ), $aflx_steps['done'], $aflx_steps['total'] ) );
 					?>
 				</span>

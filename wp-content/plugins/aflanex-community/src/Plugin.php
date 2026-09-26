@@ -11,6 +11,13 @@ defined( 'ABSPATH' ) || exit;
 final class Plugin {
 
 	public static function boot(): void {
+		add_action( 'init', [ self::class, 'load_textdomain' ], 0 );
+
+		// Admin, updates and privacy work even if FluentCommunity is inactive.
+		Admin\AdminPage::register();
+		Admin\Updater::register();
+		Privacy\Privacy::register();
+
 		Security\Hardening::register();
 		Projects\ProjectPostType::register();
 		Profiles\MemberProfile::register();
@@ -27,6 +34,10 @@ final class Plugin {
 		Portal\Copy::register();
 		Projects\ProjectForms::register();
 		Projects\CommunityBridge::register();
+	}
+
+	public static function load_textdomain(): void {
+		load_plugin_textdomain( 'aflanex-community', false, dirname( plugin_basename( AFLANEX_COMMUNITY_FILE ) ) . '/languages' );
 	}
 
 	public static function has_fluent_community(): bool {

@@ -1,18 +1,26 @@
 <?php
 /**
  * Plugin Name:       Aflanex Community
- * Description:       Community logic for Aflanex Community on top of FluentCommunity: projects, member portfolios, onboarding, integration identifiers and Erudify sign-in (OpenID Connect). Presentation lives in the Aflanex Community child theme.
- * Version:           1.0.0
+ * Plugin URI:        https://github.com/Gwatso/Aflanex-Community
+ * Description:       Projects, member portfolios, people discovery, onboarding and Erudify sign-in for Aflanex Community, built on FluentCommunity.
+ * Version:           1.1.0
  * Requires at least: 6.5
  * Requires PHP:      8.0
+ * Requires Plugins:  fluent-community
  * Author:            Aflanex
- * Text Domain:       aflanex-community
+ * Author URI:        https://aflanex.com/
  * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       aflanex-community
+ * Domain Path:       /languages
+ * Update URI:        https://github.com/Gwatso/Aflanex-Community
+ *
+ * @package AflanexCommunity
  */
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'AFLANEX_COMMUNITY_VERSION', '1.0.0' );
+define( 'AFLANEX_COMMUNITY_VERSION', '1.1.0' );
 define( 'AFLANEX_COMMUNITY_FILE', __FILE__ );
 define( 'AFLANEX_COMMUNITY_DIR', plugin_dir_path( __FILE__ ) );
 define( 'AFLANEX_COMMUNITY_URL', plugin_dir_url( __FILE__ ) );

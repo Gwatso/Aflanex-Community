@@ -20,6 +20,7 @@ final class Copy {
 			'aflanex/copy/fluent_community',
 			[
 				'No posts found!'            => __( 'No conversations yet. Start something useful.', 'aflanex-community' ),
+				/* translators: %s: member's first name */
 				'What\'s happening, %s'      => __( 'What are you working on, %s?', 'aflanex-community' ),
 				'Write something here...'    => __( 'Share progress, ask a question or start a discussion…', 'aflanex-community' ),
 				'No recent activities found' => __( 'Nothing new yet. This fills up as people join in.', 'aflanex-community' ),
@@ -28,9 +29,11 @@ final class Copy {
 				'Feed'                       => __( 'Home', 'aflanex-community' ),
 				// Sign-in / sign-up defaults (admin-saved text in FluentCommunity settings still wins).
 				'Join our community and start your journey to success' => __( 'Connect with people, build practical projects and discover what comes next.', 'aflanex-community' ),
+				/* translators: %s: community name */
 				'Login to %s'                => __( 'Sign in to %s', 'aflanex-community' ),
 				'Enter your email and password to login' => __( 'Welcome back. Pick up where you left off.', 'aflanex-community' ),
 				'Login'                      => __( 'Sign in', 'aflanex-community' ),
+				/* translators: %s: community name */
 				'Sign Up to %s'              => __( 'Join %s', 'aflanex-community' ),
 				'Create an account to get started' => __( 'Create your account and start building with others.', 'aflanex-community' ),
 			]

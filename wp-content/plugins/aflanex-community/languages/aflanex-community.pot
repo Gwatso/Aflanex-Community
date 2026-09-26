@@ -1,0 +1,1439 @@
+# Copyright (C) 2026 Aflanex
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Aflanex Community 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Gwatso/Aflanex-Community/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-26T13:52:07+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: aflanex-community\n"
+
+#. Plugin Name of the plugin
+#: aflanex-community.php:3
+#: src/Admin/AdminPage.php:41
+#: src/Admin/AdminPage.php:42
+#: src/Admin/AdminPage.php:164
+#: src/Privacy/Privacy.php:43
+#: src/Privacy/Privacy.php:48
+#: src/Privacy/Privacy.php:56
+#: templates/pages/guidelines.php:12
+msgid "Aflanex Community"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: aflanex-community.php:4
+msgid "https://github.com/Gwatso/Aflanex-Community"
+msgstr ""
+
+#. Description of the plugin
+#: aflanex-community.php:5
+msgid "Projects, member portfolios, people discovery, onboarding and Erudify sign-in for Aflanex Community, built on FluentCommunity."
+msgstr ""
+
+#. Author of the plugin
+#: aflanex-community.php:10
+msgid "Aflanex"
+msgstr ""
+
+#. Author URI of the plugin
+#: aflanex-community.php:11
+msgid "https://aflanex.com/"
+msgstr ""
+
+#: src/Admin/AdminPage.php:67
+#: src/Admin/AdminPage.php:216
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/AdminPage.php:79
+msgid "Docs"
+msgstr ""
+
+#: src/Admin/AdminPage.php:80
+#: src/Admin/AdminPage.php:261
+msgid "Report an issue"
+msgstr ""
+
+#: src/Admin/AdminPage.php:86
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: src/Admin/AdminPage.php:107
+msgid "FluentCommunity"
+msgstr ""
+
+#. translators: %s: version
+#: src/Admin/AdminPage.php:111
+#, php-format
+msgid "Active, version %s"
+msgstr ""
+
+#: src/Admin/AdminPage.php:112
+msgid "Not active. Community features are paused."
+msgstr ""
+
+#: src/Admin/AdminPage.php:122
+msgid "Community screens"
+msgstr ""
+
+#. translators: %s: list of missing page keys
+#: src/Admin/AdminPage.php:125
+#, php-format
+msgid "Missing or unpublished: %s. Use “Repair setup”."
+msgstr ""
+
+#. translators: %s: list of missing page keys
+#: src/Admin/AdminPage.php:125
+msgid "All pages published"
+msgstr ""
+
+#: src/Admin/AdminPage.php:130
+msgid "Projects space"
+msgstr ""
+
+#: src/Admin/AdminPage.php:132
+msgid "Not found. Project discussions can’t be created. Use “Repair setup”."
+msgstr ""
+
+#: src/Admin/AdminPage.php:138
+msgid "Email delivery"
+msgstr ""
+
+#: src/Admin/AdminPage.php:140
+msgid "FluentSMTP connection configured"
+msgstr ""
+
+#: src/Admin/AdminPage.php:140
+msgid "No FluentSMTP connection. Password resets and notifications may not arrive."
+msgstr ""
+
+#: src/Admin/AdminPage.php:144
+#: src/Admin/AdminPage.php:210
+msgid "Erudify sign-in"
+msgstr ""
+
+#. translators: %s: identity provider host
+#: src/Admin/AdminPage.php:148
+#, php-format
+msgid "Configured (%s)"
+msgstr ""
+
+#: src/Admin/AdminPage.php:149
+msgid "Not configured. Members sign in with a community password."
+msgstr ""
+
+#: src/Admin/AdminPage.php:165
+msgid "Projects, portfolios, people discovery and Erudify sign-in on top of FluentCommunity. Spaces, members, moderation and menus are managed in FluentCommunity."
+msgstr ""
+
+#: src/Admin/AdminPage.php:168
+msgid "Setup checked and repaired where needed."
+msgstr ""
+
+#: src/Admin/AdminPage.php:171
+#: src/Projects/CommunityBridge.php:71
+#: templates/projects/directory.php:50
+#: templates/projects/single.php:104
+msgid "Status"
+msgstr ""
+
+#: src/Admin/AdminPage.php:181
+msgid "OK:"
+msgstr ""
+
+#: src/Admin/AdminPage.php:181
+msgid "Needs attention:"
+msgstr ""
+
+#: src/Admin/AdminPage.php:188
+msgid "Plugin version"
+msgstr ""
+
+#. translators: %s: version
+#: src/Admin/AdminPage.php:195
+#, php-format
+msgid "Version %s is available"
+msgstr ""
+
+#: src/Admin/AdminPage.php:203
+msgid "Published projects"
+msgstr ""
+
+#: src/Admin/AdminPage.php:204
+msgid "Manage projects"
+msgstr ""
+
+#: src/Admin/AdminPage.php:211
+msgid "To give members one account across Erudify and the Community, register this redirect URI in Erudify’s Supabase OAuth app, then add the credentials to wp-config.php:"
+msgstr ""
+
+#: src/Admin/AdminPage.php:213
+msgid "Read the setup guide"
+msgstr ""
+
+#: src/Admin/AdminPage.php:221
+msgid "New projects per member per day"
+msgstr ""
+
+#: src/Admin/AdminPage.php:224
+msgid "Limits spam. Moderators aren’t limited."
+msgstr ""
+
+#: src/Admin/AdminPage.php:228
+msgid "Show member count publicly from"
+msgstr ""
+
+#: src/Admin/AdminPage.php:231
+msgid "members"
+msgstr ""
+
+#: src/Admin/AdminPage.php:232
+msgid "The entry page shows member and project counts only once the community reaches this size."
+msgstr ""
+
+#: src/Admin/AdminPage.php:236
+msgid "On uninstall"
+msgstr ""
+
+#: src/Admin/AdminPage.php:240
+msgid "Delete all Aflanex Community data when the plugin is deleted"
+msgstr ""
+
+#: src/Admin/AdminPage.php:242
+msgid "Off by default. When on, deleting the plugin permanently removes projects, portfolio details, focus areas, skills and the plugin’s pages. FluentCommunity posts and spaces are never touched."
+msgstr ""
+
+#: src/Admin/AdminPage.php:249
+msgid "Tools"
+msgstr ""
+
+#: src/Admin/AdminPage.php:253
+msgid "Recreates any missing community pages and spaces, refreshes URLs and re-checks for updates. Safe to run at any time; it never overwrites content you’ve edited."
+msgstr ""
+
+#: src/Admin/AdminPage.php:254
+msgid "Repair setup"
+msgstr ""
+
+#: src/Admin/AdminPage.php:257
+msgid "Help"
+msgstr ""
+
+#: src/Admin/AdminPage.php:259
+msgid "Architecture and admin guide"
+msgstr ""
+
+#: src/Admin/AdminPage.php:260
+msgid "Manage focus areas"
+msgstr ""
+
+#: src/Admin/AdminPage.php:260
+msgid "Tidy up skills"
+msgstr ""
+
+#: src/Brand/Brand.php:22
+#: src/Setup/Installer.php:251
+msgid "Build what’s next together."
+msgstr ""
+
+#: src/Identity/Sso.php:324
+msgid "Sign-in was cancelled."
+msgstr ""
+
+#: src/Identity/Sso.php:325
+msgid "Your sign-in attempt timed out. Please try again."
+msgstr ""
+
+#: src/Identity/Sso.php:326
+msgid "We need an email address from your Erudify account to create your Community profile."
+msgstr ""
+
+#: src/Identity/Sso.php:327
+msgid "Please verify your email address in Erudify, then try again."
+msgstr ""
+
+#: src/Identity/Sso.php:328
+msgid "This account needs to be linked by a community admin. Please contact the Aflanex team."
+msgstr ""
+
+#: src/Identity/Sso.php:329
+msgid "This email is already linked to a different Erudify account. Please contact the Aflanex team."
+msgstr ""
+
+#: src/Identity/Sso.php:331
+msgid "We couldn’t sign you in with Erudify just now. Please try again in a moment."
+msgstr ""
+
+#. translators: %s: identity provider name, e.g. Erudify
+#: src/Identity/Sso.php:351
+#: src/Identity/Sso.php:364
+#, php-format
+msgid "Continue with %s"
+msgstr ""
+
+#: src/Identity/Sso.php:354
+msgid "or use your community password"
+msgstr ""
+
+#: src/Pages/Pages.php:228
+#: src/Projects/ProjectPostType.php:72
+#: templates/projects/form.php:73
+#: templates/projects/single.php:50
+msgid "Edit project"
+msgstr ""
+
+#: src/Pages/Pages.php:246
+msgid "Aflanex Community screen"
+msgstr ""
+
+#: src/Pages/Pages.php:303
+msgid "You can only edit projects you own or collaborate on."
+msgstr ""
+
+#: src/Pages/Pages.php:342
+msgid "We couldn’t find that member."
+msgstr ""
+
+#: src/Pages/Pages.php:342
+msgid "They may have changed their username or left the community."
+msgstr ""
+
+#: src/Pages/Pages.php:342
+#: templates/people/directory.php:62
+msgid "Find people"
+msgstr ""
+
+#: src/Plugin.php:51
+msgid "Aflanex Community needs FluentCommunity to be active. Community features are paused until it is."
+msgstr ""
+
+#: src/Portal/Copy.php:22
+msgid "No conversations yet. Start something useful."
+msgstr ""
+
+#. translators: %s: member's first name
+#: src/Portal/Copy.php:24
+#, php-format
+msgid "What are you working on, %s?"
+msgstr ""
+
+#: src/Portal/Copy.php:25
+msgid "Share progress, ask a question or start a discussion…"
+msgstr ""
+
+#: src/Portal/Copy.php:26
+msgid "Nothing new yet. This fills up as people join in."
+msgstr ""
+
+#: src/Portal/Copy.php:27
+msgid "You’re all caught up."
+msgstr ""
+
+#: src/Portal/Copy.php:28
+msgid "No one here yet. Invite someone who should be."
+msgstr ""
+
+#: src/Portal/Copy.php:29
+#: src/Portal/Portal.php:57
+msgid "Home"
+msgstr ""
+
+#: src/Portal/Copy.php:31
+msgid "Connect with people, build practical projects and discover what comes next."
+msgstr ""
+
+#. translators: %s: community name
+#: src/Portal/Copy.php:33
+#, php-format
+msgid "Sign in to %s"
+msgstr ""
+
+#: src/Portal/Copy.php:34
+msgid "Welcome back. Pick up where you left off."
+msgstr ""
+
+#: src/Portal/Copy.php:35
+msgid "Sign in"
+msgstr ""
+
+#. translators: %s: community name
+#: src/Portal/Copy.php:37
+#, php-format
+msgid "Join %s"
+msgstr ""
+
+#: src/Portal/Copy.php:38
+msgid "Create your account and start building with others."
+msgstr ""
+
+#: src/Portal/Portal.php:70
+#: src/Portal/Portal.php:129
+#: src/Projects/ProjectPostType.php:69
+#: src/Projects/ProjectPostType.php:75
+#: src/Setup/Installer.php:67
+#: templates/portfolio/view.php:158
+#: templates/projects/directory.php:27
+msgid "Projects"
+msgstr ""
+
+#: src/Portal/Portal.php:79
+#: src/Portal/Portal.php:135
+#: src/Setup/Installer.php:69
+#: templates/people/directory.php:27
+msgid "People"
+msgstr ""
+
+#: src/Portal/Portal.php:95
+msgid "My portfolio"
+msgstr ""
+
+#: src/Portal/Portal.php:103
+#: templates/projects/directory.php:37
+msgid "My projects"
+msgstr ""
+
+#: src/Portal/Portal.php:161
+#: src/Setup/Installer.php:70
+msgid "Portfolio"
+msgstr ""
+
+#: src/Portal/Portal.php:187
+msgid "Your next steps"
+msgstr ""
+
+#: src/Portal/Portal.php:188
+msgid "Getting started progress"
+msgstr ""
+
+#. translators: 1: steps done, 2: total steps
+#: src/Portal/Portal.php:199
+#: templates/portfolio/edit.php:38
+#, php-format
+msgid "%1$d of %2$d done"
+msgstr ""
+
+#: src/Portal/Portal.php:201
+msgid "See all"
+msgstr ""
+
+#: src/Privacy/Privacy.php:37
+msgid "Suggested text describing what the Aflanex Community plugin stores. Edit it to match your practices."
+msgstr ""
+
+#: src/Privacy/Privacy.php:38
+msgid "Suggested text:"
+msgstr ""
+
+#: src/Privacy/Privacy.php:39
+msgid "When you complete your community portfolio we store the details you choose to add: headline, location, what you are learning, what you can help with, skills, interests, what you are open to and links. These are visible only to signed-in members, and you can hide yourself from the member directory at any time."
+msgstr ""
+
+#: src/Privacy/Privacy.php:40
+msgid "Projects you share (including descriptions, links, images, collaborators and progress updates) are visible to signed-in members."
+msgstr ""
+
+#: src/Privacy/Privacy.php:41
+msgid "If you sign in with your Erudify account, we store your Erudify account identifier so we can recognise you, plus the time of your last sign-in. We do not store your Erudify password, and we do not receive your learning records."
+msgstr ""
+
+#: src/Privacy/Privacy.php:75
+#: src/Projects/ProjectPostType.php:117
+#: templates/partials/project-card.php:27
+#: templates/people/directory.php:103
+#: templates/portfolio/edit.php:76
+#: templates/portfolio/view.php:118
+msgid "Skills"
+msgstr ""
+
+#: src/Privacy/Privacy.php:75
+msgid "Interests"
+msgstr ""
+
+#: src/Privacy/Privacy.php:83
+msgid "Erudify account ID"
+msgstr ""
+
+#: src/Privacy/Privacy.php:90
+msgid "Community portfolio"
+msgstr ""
+
+#: src/Privacy/Privacy.php:100
+msgid "Community projects"
+msgstr ""
+
+#: src/Privacy/Privacy.php:103
+msgid "Title"
+msgstr ""
+
+#: src/Privacy/Privacy.php:104
+msgid "Summary"
+msgstr ""
+
+#: src/Privacy/Privacy.php:105
+msgid "Role"
+msgstr ""
+
+#: src/Privacy/Privacy.php:105
+msgid "Owner"
+msgstr ""
+
+#: src/Privacy/Privacy.php:105
+#: templates/projects/single.php:159
+msgid "Collaborator"
+msgstr ""
+
+#: src/Privacy/Privacy.php:106
+msgid "URL"
+msgstr ""
+
+#. translators: %d: number of projects
+#: src/Privacy/Privacy.php:147
+#, php-format
+msgid "%d project owned by this member was kept because it is shared community content. Delete it under Projects if required."
+msgid_plural "%d projects owned by this member were kept because they are shared community content. Delete them under Projects if required."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Profiles/MemberProfile.php:33
+msgid "Collaborating on projects"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:34
+msgid "Giving feedback"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:35
+msgid "Mentoring others"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:36
+msgid "Finding a mentor"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:42
+msgid "Website or portfolio"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:43
+msgid "LinkedIn"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:44
+msgid "GitHub"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:200
+msgid "Add a photo and a short bio"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:206
+msgid "Add your headline and skills"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:212
+msgid "Join a space that fits your goals"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:218
+msgid "Introduce yourself"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:224
+msgid "Reply to someone’s post"
+msgstr ""
+
+#: src/Profiles/MemberProfile.php:230
+msgid "Share what you’re building"
+msgstr ""
+
+#. translators: %s: the problem a project addresses
+#: src/Projects/CommunityBridge.php:67
+#, php-format
+msgid "**The problem:** %s"
+msgstr ""
+
+#: src/Projects/CommunityBridge.php:74
+msgid "Looking for"
+msgstr ""
+
+#. translators: %s: list of @mentions
+#: src/Projects/CommunityBridge.php:81
+#, php-format
+msgid "Building with %s"
+msgstr ""
+
+#: src/Projects/CommunityBridge.php:85
+msgid "Feedback is welcome. Reply below with what works, what doesn’t and what you’d try next."
+msgstr ""
+
+#. translators: %s: project URL
+#: src/Projects/CommunityBridge.php:89
+#, php-format
+msgid "[View the project →](%s)"
+msgstr ""
+
+#. translators: 1: project title, 2: project URL
+#: src/Projects/CommunityBridge.php:126
+#, php-format
+msgid "Update on [%1$s](%2$s)"
+msgstr ""
+
+#: src/Projects/ProjectForms.php:108
+msgid "Give your project a name (3–120 characters)."
+msgstr ""
+
+#: src/Projects/ProjectForms.php:111
+msgid "Describe the project in one line (up to 160 characters)."
+msgstr ""
+
+#: src/Projects/ProjectForms.php:114
+msgid "Choose a status."
+msgstr ""
+
+#. translators: %d: character limit
+#: src/Projects/ProjectForms.php:119
+#, php-format
+msgid "Keep this under %d characters."
+msgstr ""
+
+#: src/Projects/ProjectForms.php:149
+msgid "We couldn’t save the project. Please try again."
+msgstr ""
+
+#. translators: %s: list of usernames
+#: src/Projects/ProjectForms.php:216
+#, php-format
+msgid "We couldn’t find: %s. Use community usernames, separated by commas."
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:30
+msgid "Idea"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:31
+msgid "In progress"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:32
+#: templates/projects/directory.php:35
+msgid "Seeking collaborators"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:33
+msgid "Ready for feedback"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:34
+msgid "Completed"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:70
+msgid "Project"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:71
+msgid "Add project"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:73
+#: templates/projects/directory.php:46
+msgid "Search projects"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:74
+msgid "No projects yet."
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:98
+msgid "Focus areas"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:99
+#: templates/projects/directory.php:59
+#: templates/projects/form.php:144
+msgid "Focus area"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:100
+msgid "Add focus area"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:102
+msgid "Areas used to group projects and match members by interest."
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:118
+msgid "Skill"
+msgstr ""
+
+#: src/Projects/ProjectPostType.php:119
+msgid "Add skill"
+msgstr ""
+
+#: src/Security/Hardening.php:57
+msgid "Sign in to view members."
+msgstr ""
+
+#: src/Setup/Installer.php:68
+#: templates/portfolio/view.php:91
+#: templates/projects/directory.php:30
+#: templates/projects/directory.php:111
+#: templates/projects/directory.php:126
+#: templates/projects/form.php:73
+msgid "Start a project"
+msgstr ""
+
+#: src/Setup/Installer.php:71
+msgid "Edit your portfolio"
+msgstr ""
+
+#: src/Setup/Installer.php:72
+msgid "Community guidelines"
+msgstr ""
+
+#: src/Setup/Installer.php:138
+msgid "Get Started"
+msgstr ""
+
+#: src/Setup/Installer.php:139
+#: templates/projects/directory.php:26
+#: templates/projects/form.php:72
+msgid "Build"
+msgstr ""
+
+#: src/Setup/Installer.php:140
+msgid "Grow"
+msgstr ""
+
+#: src/Setup/Installer.php:145
+msgid "Announcements, how the community works and what’s coming next."
+msgstr ""
+
+#: src/Setup/Installer.php:152
+msgid "Introductions"
+msgstr ""
+
+#: src/Setup/Installer.php:155
+msgid "Say who you are, what you’re learning and what you want to build."
+msgstr ""
+
+#: src/Setup/Installer.php:163
+msgid "Projects & Collaboration"
+msgstr ""
+
+#: src/Setup/Installer.php:164
+msgid "Share what you’re building, post progress and find collaborators. New projects appear here automatically."
+msgstr ""
+
+#: src/Setup/Installer.php:175
+msgid "Ask the Community"
+msgstr ""
+
+#: src/Setup/Installer.php:176
+msgid "Stuck on something? Ask here. Answer what you can, because helping others is how we all get better."
+msgstr ""
+
+#: src/Setup/Installer.php:184
+msgid "Career & Opportunities"
+msgstr ""
+
+#: src/Setup/Installer.php:185
+msgid "Career moves, remote work, freelancing and opportunities worth sharing."
+msgstr ""
+
+#: src/Setup/Installer.php:252
+msgid "Connect with people, build practical projects, share what you’re learning and discover what comes next."
+msgstr ""
+
+#: src/Support/View.php:45
+msgid "Your project is live. It has been shared in the Projects space so people can find it."
+msgstr ""
+
+#: src/Support/View.php:46
+msgid "Project updated."
+msgstr ""
+
+#: src/Support/View.php:47
+msgid "Update posted. Nice momentum."
+msgstr ""
+
+#: src/Support/View.php:48
+msgid "Your portfolio details are saved."
+msgstr ""
+
+#: src/Support/View.php:49
+msgid "You don’t have permission to do that."
+msgstr ""
+
+#: src/Support/View.php:50
+msgid "Something in the form needs attention. Please check and try again."
+msgstr ""
+
+#: src/Support/View.php:51
+msgid "That form expired. Please try again."
+msgstr ""
+
+#: src/Support/View.php:52
+msgid "The image couldn’t be uploaded. Use a JPG, PNG or WebP under 5 MB."
+msgstr ""
+
+#: src/Support/View.php:53
+msgid "Write a short update before posting."
+msgstr ""
+
+#: templates/partials/pagination.php:13
+msgid "Pages"
+msgstr ""
+
+#: templates/partials/pagination.php:15
+msgid "Previous"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages
+#: templates/partials/pagination.php:20
+#, php-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: templates/partials/pagination.php:24
+msgid "Next"
+msgstr ""
+
+#: templates/partials/project-card.php:24
+msgid "Looking for:"
+msgstr ""
+
+#. translators: %d: number of other collaborators
+#: templates/partials/project-card.php:45
+#, php-format
+msgid " + %d other"
+msgid_plural " + %d others"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: human time difference
+#: templates/partials/project-card.php:53
+#, php-format
+msgid "Active %s ago"
+msgstr ""
+
+#: templates/people/directory.php:26
+msgid "Connect"
+msgstr ""
+
+#: templates/people/directory.php:28
+msgid "Find people with similar interests, skills you need, or someone you can help."
+msgstr ""
+
+#: templates/people/directory.php:31
+msgid "View your portfolio"
+msgstr ""
+
+#: templates/people/directory.php:31
+#: templates/people/directory.php:139
+msgid "Complete your portfolio"
+msgstr ""
+
+#: templates/people/directory.php:36
+#: templates/projects/directory.php:42
+msgid "Search & filter"
+msgstr ""
+
+#: templates/people/directory.php:39
+msgid "Search by name"
+msgstr ""
+
+#: templates/people/directory.php:43
+#: templates/portfolio/edit.php:93
+#: templates/portfolio/view.php:146
+msgid "Interested in"
+msgstr ""
+
+#: templates/people/directory.php:45
+msgid "Any area"
+msgstr ""
+
+#: templates/people/directory.php:52
+#: templates/portfolio/edit.php:106
+#: templates/portfolio/view.php:134
+msgid "Open to"
+msgstr ""
+
+#: templates/people/directory.php:54
+msgid "Anything"
+msgstr ""
+
+#: templates/people/directory.php:64
+#: templates/projects/directory.php:70
+msgid "Clear"
+msgstr ""
+
+#. translators: %s: skill
+#: templates/people/directory.php:75
+#, php-format
+msgid "People with the skill “%s”."
+msgstr ""
+
+#. translators: %d: number of people
+#: templates/people/directory.php:84
+#, php-format
+msgid "%d person found"
+msgid_plural "%d people found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/people/directory.php:110
+msgid "Can help with:"
+msgstr ""
+
+#: templates/people/directory.php:123
+msgid "No one matches that yet."
+msgstr ""
+
+#: templates/people/directory.php:124
+msgid "The community is still growing. Try a broader search, or ask in a space and let people find you."
+msgstr ""
+
+#: templates/people/directory.php:126
+msgid "See everyone"
+msgstr ""
+
+#: templates/people/directory.php:136
+msgid "Meet your community."
+msgstr ""
+
+#: templates/people/directory.php:137
+msgid "Members appear here once they join. Add your skills and interests so the right people can find you."
+msgstr ""
+
+#: templates/people/directory.php:146
+msgid "Only signed-in members can see this directory. You can hide yourself from it in your portfolio settings."
+msgstr ""
+
+#: templates/portfolio/edit.php:24
+msgid "Your portfolio"
+msgstr ""
+
+#: templates/portfolio/edit.php:25
+msgid "Tell people what you’re about"
+msgstr ""
+
+#: templates/portfolio/edit.php:26
+msgid "A few details help the right people find you, and help you find them."
+msgstr ""
+
+#: templates/portfolio/edit.php:28
+msgid "View portfolio"
+msgstr ""
+
+#: templates/portfolio/edit.php:34
+msgid "Getting started"
+msgstr ""
+
+#: templates/portfolio/edit.php:48
+msgid "(done)"
+msgstr ""
+
+#: templates/portfolio/edit.php:62
+msgid "Your name, photo and bio are managed on your community profile."
+msgstr ""
+
+#: templates/portfolio/edit.php:62
+msgid "Edit those there"
+msgstr ""
+
+#: templates/portfolio/edit.php:65
+msgid "Headline"
+msgstr ""
+
+#: templates/portfolio/edit.php:66
+msgid "e.g. Virtual assistant learning automation"
+msgstr ""
+
+#: templates/portfolio/edit.php:67
+msgid "What you do or what you’re working towards."
+msgstr ""
+
+#: templates/portfolio/edit.php:71
+msgid "Location"
+msgstr ""
+
+#: templates/portfolio/edit.php:71
+msgid "(optional, city or country is enough)"
+msgstr ""
+
+#: templates/portfolio/edit.php:77
+msgid "e.g. Customer support, Canva, Research"
+msgstr ""
+
+#: templates/portfolio/edit.php:78
+msgid "Separate with commas. Include skills you’re still building."
+msgstr ""
+
+#: templates/portfolio/edit.php:82
+msgid "What are you learning right now?"
+msgstr ""
+
+#: templates/portfolio/edit.php:87
+msgid "What’s one thing you can help others with?"
+msgstr ""
+
+#: templates/portfolio/edit.php:118
+#: templates/projects/form.php:170
+#: templates/projects/single.php:180
+msgid "Links"
+msgstr ""
+
+#: templates/portfolio/edit.php:118
+#: templates/projects/form.php:120
+#: templates/projects/form.php:125
+#: templates/projects/form.php:131
+#: templates/projects/form.php:137
+#: templates/projects/form.php:157
+#: templates/projects/form.php:163
+#: templates/projects/form.php:183
+msgid "(optional)"
+msgstr ""
+
+#: templates/portfolio/edit.php:128
+msgid "Visibility"
+msgstr ""
+
+#: templates/portfolio/edit.php:131
+msgid "Show me in the People directory"
+msgstr ""
+
+#: templates/portfolio/edit.php:131
+msgid "Only signed-in members can see the directory. Your email is never shown."
+msgstr ""
+
+#: templates/portfolio/edit.php:136
+msgid "Save portfolio"
+msgstr ""
+
+#. translators: %s: source system name
+#: templates/portfolio/learning.php:29
+#, php-format
+msgid "From %s"
+msgstr ""
+
+#: templates/portfolio/learning.php:32
+msgid "View learning record"
+msgstr ""
+
+#. translators: %s: month and year
+#: templates/portfolio/view.php:38
+#, php-format
+msgid "Member since %s"
+msgstr ""
+
+#: templates/portfolio/view.php:45
+msgid "Edit portfolio"
+msgstr ""
+
+#: templates/portfolio/view.php:47
+msgid "Photo & bio"
+msgstr ""
+
+#: templates/portfolio/view.php:47
+msgid "Posts & activity"
+msgstr ""
+
+#: templates/portfolio/view.php:54
+msgid "Your portfolio is almost ready."
+msgstr ""
+
+#: templates/portfolio/view.php:55
+msgid "Add a headline, a few skills and what you’re learning so people know what you’re about."
+msgstr ""
+
+#: templates/portfolio/view.php:56
+msgid "Add details"
+msgstr ""
+
+#: templates/portfolio/view.php:64
+msgid "About"
+msgstr ""
+
+#: templates/portfolio/view.php:71
+msgid "Building"
+msgstr ""
+
+#: templates/portfolio/view.php:73
+msgid "Start another"
+msgstr ""
+
+#: templates/portfolio/view.php:88
+msgid "What are you building?"
+msgstr ""
+
+#: templates/portfolio/view.php:89
+msgid "Projects are the strongest evidence of what you can do, and they don’t need to be finished."
+msgstr ""
+
+#: templates/portfolio/view.php:96
+msgid "No projects shared yet."
+msgstr ""
+
+#: templates/portfolio/view.php:102
+msgid "Learning"
+msgstr ""
+
+#: templates/portfolio/view.php:108
+msgid "Skills and interests"
+msgstr ""
+
+#: templates/portfolio/view.php:111
+msgid "Learning right now"
+msgstr ""
+
+#: templates/portfolio/view.php:130
+msgid "Can help with"
+msgstr ""
+
+#: templates/portfolio/view.php:156
+msgid "Contribution"
+msgstr ""
+
+#: templates/portfolio/view.php:159
+msgid "Posts"
+msgstr ""
+
+#: templates/portfolio/view.php:160
+msgid "Replies"
+msgstr ""
+
+#: templates/portfolio/view.php:166
+msgid "Elsewhere"
+msgstr ""
+
+#: templates/portfolio/view.php:169
+#: templates/projects/single.php:183
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: templates/projects/directory.php:28
+msgid "What members are building. Join in, give feedback or start your own."
+msgstr ""
+
+#: templates/projects/directory.php:33
+msgid "Project views"
+msgstr ""
+
+#: templates/projects/directory.php:34
+#: templates/projects/form.php:68
+#: templates/projects/single.php:19
+msgid "All projects"
+msgstr ""
+
+#: templates/projects/directory.php:36
+msgid "Needs feedback"
+msgstr ""
+
+#: templates/projects/directory.php:47
+msgid "Name, idea or problem"
+msgstr ""
+
+#: templates/projects/directory.php:52
+msgid "Any status"
+msgstr ""
+
+#: templates/projects/directory.php:61
+msgid "All areas"
+msgstr ""
+
+#: templates/projects/directory.php:68
+msgid "Apply"
+msgstr ""
+
+#. translators: %s: skill
+#: templates/projects/directory.php:82
+#, php-format
+msgid "Showing projects using “%s”."
+msgstr ""
+
+#. translators: %d: number of projects
+#: templates/projects/directory.php:91
+#, php-format
+msgid "%d project found"
+msgid_plural "%d projects found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/projects/directory.php:94
+msgid "Project list"
+msgstr ""
+
+#: templates/projects/directory.php:108
+msgid "You haven’t shared a project yet."
+msgstr ""
+
+#: templates/projects/directory.php:109
+msgid "It doesn’t need to be finished. An idea, a practice build or a problem you want to solve all count."
+msgstr ""
+
+#: templates/projects/directory.php:121
+msgid "Nothing matches those filters yet."
+msgstr ""
+
+#: templates/projects/directory.php:122
+msgid "Try a broader search, or be the first to start something in this area."
+msgstr ""
+
+#: templates/projects/directory.php:124
+msgid "See all projects"
+msgstr ""
+
+#: templates/projects/directory.php:136
+msgid "No projects yet. What are you building?"
+msgstr ""
+
+#: templates/projects/directory.php:137
+msgid "Share an idea, a work-in-progress or something you’ve finished. Other members can offer feedback, skills or a second pair of hands."
+msgstr ""
+
+#: templates/projects/directory.php:139
+msgid "Start the first project"
+msgstr ""
+
+#: templates/projects/form.php:44
+msgid "Still shaping it. Thoughts welcome."
+msgstr ""
+
+#: templates/projects/form.php:45
+msgid "Actively working on it."
+msgstr ""
+
+#: templates/projects/form.php:46
+msgid "You want people to join."
+msgstr ""
+
+#: templates/projects/form.php:47
+msgid "You want honest input."
+msgstr ""
+
+#: templates/projects/form.php:48
+msgid "Shipped or finished."
+msgstr ""
+
+#: templates/projects/form.php:68
+msgid "Back to project"
+msgstr ""
+
+#: templates/projects/form.php:75
+msgid "It doesn’t need to be finished. Share the idea, what you’re trying to solve and where you could use help."
+msgstr ""
+
+#: templates/projects/form.php:83
+msgid "A few things need attention:"
+msgstr ""
+
+#: templates/projects/form.php:94
+msgid "Project name"
+msgstr ""
+
+#: templates/projects/form.php:100
+msgid "One-line summary"
+msgstr ""
+
+#: templates/projects/form.php:102
+msgid "What it is and who it’s for, in one sentence."
+msgstr ""
+
+#: templates/projects/form.php:107
+msgid "Where is it at?"
+msgstr ""
+
+#: templates/projects/form.php:120
+msgid "What help are you looking for?"
+msgstr ""
+
+#: templates/projects/form.php:121
+msgid "e.g. A designer for the landing page, someone to test the prototype"
+msgstr ""
+
+#: templates/projects/form.php:125
+msgid "What problem are you trying to solve?"
+msgstr ""
+
+#: templates/projects/form.php:131
+msgid "How are you approaching it?"
+msgstr ""
+
+#: templates/projects/form.php:137
+msgid "Anything else people should know?"
+msgstr ""
+
+#: templates/projects/form.php:144
+msgid "(pick any that fit)"
+msgstr ""
+
+#: templates/projects/form.php:157
+#: templates/projects/single.php:169
+msgid "Skills used"
+msgstr ""
+
+#: templates/projects/form.php:158
+msgid "e.g. Research, Figma, Prompt design"
+msgstr ""
+
+#: templates/projects/form.php:159
+msgid "Separate with commas. Up to 15."
+msgstr ""
+
+#: templates/projects/form.php:163
+msgid "Collaborators"
+msgstr ""
+
+#: templates/projects/form.php:165
+msgid "Community usernames, separated by commas. Collaborators can edit the project and post updates."
+msgstr ""
+
+#: templates/projects/form.php:165
+msgid "Only the project owner can change collaborators."
+msgstr ""
+
+#: templates/projects/form.php:170
+msgid "(demo, repo, prototype… optional)"
+msgstr ""
+
+#: templates/projects/form.php:174
+msgid "Link label"
+msgstr ""
+
+#: templates/projects/form.php:175
+msgid "Label"
+msgstr ""
+
+#: templates/projects/form.php:176
+msgid "Link URL"
+msgstr ""
+
+#: templates/projects/form.php:183
+msgid "Cover image"
+msgstr ""
+
+#: templates/projects/form.php:185
+msgid "A screenshot, sketch or photo of the work. JPG, PNG or WebP, up to 5 MB."
+msgstr ""
+
+#: templates/projects/form.php:190
+msgid "I’d like feedback on this"
+msgstr ""
+
+#: templates/projects/form.php:190
+msgid "We’ll invite members to share constructive feedback in the discussion."
+msgstr ""
+
+#: templates/projects/form.php:194
+msgid "Save changes"
+msgstr ""
+
+#: templates/projects/form.php:194
+msgid "Share project"
+msgstr ""
+
+#: templates/projects/form.php:195
+msgid "Cancel"
+msgstr ""
+
+#: templates/projects/form.php:198
+msgid "Sharing creates a post in the Projects space so members can discuss it with you."
+msgstr ""
+
+#. translators: %d: comment count
+#: templates/projects/single.php:43
+#, php-format
+msgid "Join the discussion (%d)"
+msgid_plural "Join the discussion (%d)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/projects/single.php:44
+msgid "Give feedback"
+msgstr ""
+
+#: templates/projects/single.php:44
+msgid "Start the discussion"
+msgstr ""
+
+#: templates/projects/single.php:59
+msgid "Looking for collaborators"
+msgstr ""
+
+#: templates/projects/single.php:62
+msgid "Offer to help in the discussion →"
+msgstr ""
+
+#: templates/projects/single.php:69
+msgid "The problem"
+msgstr ""
+
+#: templates/projects/single.php:76
+msgid "The approach"
+msgstr ""
+
+#: templates/projects/single.php:83
+msgid "About the project"
+msgstr ""
+
+#: templates/projects/single.php:90
+msgid "Progress updates"
+msgstr ""
+
+#: templates/projects/single.php:99
+msgid "What moved forward?"
+msgstr ""
+
+#: templates/projects/single.php:100
+msgid "What you did, what you learned, what’s next…"
+msgstr ""
+
+#: templates/projects/single.php:101
+msgid "Updates are shared in the Projects space, so your progress shows up in people’s Home feed."
+msgstr ""
+
+#: templates/projects/single.php:110
+msgid "Post update"
+msgstr ""
+
+#. translators: %s: human time difference
+#: templates/projects/single.php:127
+#: templates/projects/single.php:199
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: templates/projects/single.php:140
+msgid "No updates yet. Short, regular updates help people follow along and offer help."
+msgstr ""
+
+#: templates/projects/single.php:141
+msgid "No updates yet. Check back soon, or ask how it’s going in the discussion."
+msgstr ""
+
+#: templates/projects/single.php:149
+msgid "Project details"
+msgstr ""
+
+#: templates/projects/single.php:151
+msgid "Team"
+msgstr ""
+
+#: templates/projects/single.php:159
+msgid "Project owner"
+msgstr ""
+
+#: templates/projects/single.php:191
+msgid "Started"
+msgstr ""
+
+#: templates/projects/single.php:195
+msgid "Last activity"
+msgstr ""

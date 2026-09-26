@@ -7,6 +7,7 @@
 use Aflanex\Community\Identity\Sso;
 use Aflanex\Community\Pages\Pages;
 use Aflanex\Community\Projects\Projects;
+use Aflanex\Community\Support\Settings;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -73,7 +74,7 @@ function aflanex_community_public_stats(): array {
 		$members = (int) \FluentCommunity\App\Models\XProfile::where( 'status', 'active' )->count();
 	}
 
-	$threshold = (int) apply_filters( 'aflanex/public_stats_threshold', 50 );
+	$threshold = (int) apply_filters( 'aflanex/public_stats_threshold', (int) Settings::get( 'public_stats_threshold' ) );
 
 	return [
 		'members'  => $members,
