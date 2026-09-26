@@ -1,0 +1,186 @@
+/*
+ * Aflanex Community: FluentCommunity portal skin
+ * Maps FluentCommunity's own CSS variables onto Aflanex tokens, so the
+ * portal SPA and our frame pages share one design system. Selectors are
+ * one step more specific than FluentCommunity's generated colour CSS
+ * (`body{}` / `html.dark body{}`), so no !important is needed for colours.
+ * Never edits plugin files; purely additive.
+ */
+
+:root body,
+:root body .fcom_top_menu,
+:root body .spaces {
+	--fcom-primary-bg: var(--aflanex-surface);
+	--fcom-secondary-bg: var(--aflanex-background);
+	--el-color-white: var(--aflanex-background);
+	--fcom-secondary-content-bg: var(--aflanex-surface-sunken);
+	--fcom-active-bg: var(--aflanex-surface-sunken);
+	--fcom-light-bg: var(--aflanex-border);
+	--fcom-deep-bg: var(--aflanex-surface-inverse);
+	--fcom-menu-text: var(--aflanex-text-secondary);
+	--fcom-menu-text-active: var(--aflanex-text);
+	--fcom-menu-text-hover: var(--aflanex-text);
+	--fcom-menu-bg-hover: var(--aflanex-surface-sunken);
+	--fcom-primary-text: var(--aflanex-text);
+	--el-color-primary: var(--aflanex-ink);
+	--fcom-secondary-text: var(--aflanex-text-secondary);
+	--fcom-text-off: var(--aflanex-muted);
+	--fcom-primary-button: var(--aflanex-primary);
+	--fcom-primary-button-text: var(--aflanex-on-primary);
+	--fcom-primary-border: var(--aflanex-border);
+	--fcom-secondary-border: var(--aflanex-border-strong);
+	--fcom-highlight-bg: var(--aflanex-accent-soft);
+	--fcom-text-link: var(--aflanex-link);
+}
+
+:root.dark body,
+:root.dark body .fcom_top_menu,
+:root.dark body .spaces {
+	--fcom-primary-bg: var(--aflanex-surface);
+	--fcom-secondary-bg: var(--aflanex-background);
+	--el-color-white: var(--aflanex-background);
+	--fcom-secondary-content-bg: var(--aflanex-surface-sunken);
+	--fcom-active-bg: var(--aflanex-surface-sunken);
+	--fcom-light-bg: var(--aflanex-border);
+	--fcom-deep-bg: var(--aflanex-surface-inverse);
+	--fcom-menu-text: var(--aflanex-text-secondary);
+	--fcom-menu-text-active: var(--aflanex-text);
+	--fcom-menu-text-hover: var(--aflanex-text);
+	--fcom-menu-bg-hover: var(--aflanex-surface-sunken);
+	--fcom-primary-text: var(--aflanex-text);
+	--el-color-primary: var(--aflanex-ink);
+	--fcom-secondary-text: var(--aflanex-text-secondary);
+	--fcom-text-off: var(--aflanex-muted);
+	--fcom-primary-button: var(--aflanex-primary);
+	--fcom-primary-button-text: var(--aflanex-on-primary);
+	--fcom-primary-border: var(--aflanex-border);
+	--fcom-secondary-border: var(--aflanex-border-strong);
+	--fcom-highlight-bg: var(--aflanex-accent-soft);
+	--fcom-text-link: var(--aflanex-link);
+}
+
+/* Typography: one family across portal and frame pages. */
+.fluent_com,
+.fluent_com button,
+.fluent_com input,
+.fluent_com textarea,
+.fluent_com select,
+.fcom_wrap {
+	font-family: var(--aflanex-font-sans);
+}
+
+/* Visible keyboard focus everywhere in the portal. */
+.fluent_com a:focus-visible,
+.fluent_com button:focus-visible,
+.fluent_com [role="button"]:focus-visible,
+.fluent_com input:focus-visible,
+.fluent_com textarea:focus-visible {
+	outline: 2px solid var(--aflanex-focus);
+	outline-offset: 2px;
+}
+
+/* Header brand: our brand-mark component replaces FluentCommunity's logo slot. */
+.fcom_top_menu .fhr_logo { display: none; }
+.aflx-portal-brand { display: flex; align-items: center; min-height: 32px; font-family: var(--aflanex-font-sans); }
+.aflx-portal-brand .aflx-brand { font-size: 16px; }
+.aflx-portal-brand .aflx-brand__product { font-size: 14px; }
+@media (max-width: 767px) {
+	.aflx-portal-brand .aflx-brand__product { display: none; }
+}
+
+/* Highlight the current section in the top nav on WordPress-rendered screens. */
+.aflx-section-projects .fcom_menu_item_aflx_projects > a,
+.aflx-section-people .fcom_menu_item_aflx_people > a {
+	background: var(--fcom-active-bg);
+	color: var(--aflanex-text);
+}
+
+/* FluentCommunity's "Complete your profile" nudge is a helpful prompt, not
+ * an error. Swap Element Plus "danger" red for the calm accent tint. */
+.fcom_profile_complete_btn_wrap .el-button {
+	--el-button-bg-color: var(--aflanex-accent-soft);
+	--el-button-text-color: var(--aflanex-accent-strong);
+	--el-button-border-color: transparent;
+	--el-button-hover-bg-color: var(--aflanex-accent-soft);
+	--el-button-hover-text-color: var(--aflanex-text);
+	--el-button-hover-border-color: var(--aflanex-accent);
+	--el-button-active-bg-color: var(--aflanex-accent-soft);
+	--el-button-active-border-color: var(--aflanex-accent);
+}
+
+/* Softer, more consistent surfaces. */
+.fluent_com .fcom_feed_item,
+.fluent_com .feed_list_item,
+.fluent_com .fcom_card {
+	border-radius: var(--aflanex-radius-lg);
+}
+
+/* ---------- Frame pages (Projects, People, Portfolio) ---------- */
+.fluent_com_wp_pages .fcom_wp_content,
+.fluent_com_wp_pages .fcom_supported_wp_content {
+	background: var(--aflanex-background);
+	min-width: 0;
+}
+.fluent_com_wp_pages #content.site-main { max-width: none; padding: 0; margin: 0; }
+.fluent_com_wp_pages .page-header { display: none; }
+
+/* ---------- Sidebar "next steps" card ---------- */
+.aflx-sidebar-card {
+	margin: 12px; padding: 14px; border-radius: var(--aflanex-radius);
+	border: 1px solid var(--aflanex-border); background: var(--aflanex-surface);
+	font-family: var(--aflanex-font-sans); font-size: var(--aflanex-text-sm); color: var(--aflanex-text);
+}
+.aflx-sidebar-card__title { font-weight: var(--aflanex-weight-semibold); margin: 0 0 6px; font-size: var(--aflanex-text-sm); }
+.aflx-sidebar-card .aflx-meter { margin: 8px 0 10px; }
+.aflx-sidebar-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.aflx-sidebar-card li a {
+	display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 2px 6px; margin: 0 -6px;
+	border-radius: var(--aflanex-radius-sm); color: var(--aflanex-text-secondary); text-decoration: none;
+}
+.aflx-sidebar-card li a:hover { background: var(--aflanex-surface-sunken); color: var(--aflanex-text); }
+.aflx-sidebar-card li .aflx-dot { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid var(--aflanex-border-strong); flex: none; }
+
+/* ---------- Auth screen: Erudify sign-in (only rendered when configured) ---------- */
+.aflx-sso { margin: 0 0 20px; display: grid; gap: 12px; }
+.aflx-sso__btn {
+	display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px;
+	border-radius: var(--aflanex-radius); background: var(--aflanex-primary); color: var(--aflanex-on-primary) !important;
+	font-weight: var(--aflanex-weight-semibold); text-decoration: none !important;
+}
+.aflx-sso__btn:hover { background: var(--aflanex-ink-soft); }
+.aflx-sso__divider { display: flex; align-items: center; gap: 10px; color: var(--aflanex-muted); font-size: var(--aflanex-text-sm); }
+.aflx-sso__divider::before, .aflx-sso__divider::after { content: ""; flex: 1; height: 1px; background: var(--aflanex-border); }
+
+/* ---------- Frame normalisation ----------
+ * FluentCommunity's frame CSS styles `.fcom_wp_content p/h*` (margin, colour)
+ * with higher specificity than single-class components. Inside Aflanex
+ * screens, reset those and restore component intent. Scoped to .aflx-scope. */
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p { margin: 0; color: inherit; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope :is(h1, h2, h3, h4) { color: var(--aflanex-text); margin: 0; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope :is(ul, ol) { margin-top: 0; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-eyebrow { color: var(--aflanex-muted); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p.aflx-hint,
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p.aflx-muted { color: var(--aflanex-muted); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p.aflx-field-error { color: var(--aflanex-danger); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p.aflx-lead { color: var(--aflanex-text-secondary); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p.aflx-card__body { margin-top: var(--aflanex-space-2); color: var(--aflanex-text-secondary); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope p.aflx-empty__text { margin: 0 auto var(--aflanex-space-5); color: var(--aflanex-muted); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-empty__title { margin: 0 0 var(--aflanex-space-2); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-prose p { margin: 0 0 var(--aflanex-space-4); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-prose > :last-child { margin-bottom: 0; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-guidelines h2 { margin: var(--aflanex-space-8) 0 var(--aflanex-space-3); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-card__title { margin: 0; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope a.aflx-btn--primary { color: var(--aflanex-on-primary); }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope ul.aflx-chip-list { list-style: none; padding: 0; margin: 0; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope ul.aflx-chip-list > li { margin: 0; }
+/* Inline text links read as links (FluentCommunity recolours frame links). */
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope :is(p, dd, .aflx-alert, .aflx-prose, .aflx-card, .aflx-section-title, .aflx-empty) a:is(:not([class]), .aflx-small),
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope a.aflx-small {
+	color: var(--aflanex-link);
+	text-decoration: underline;
+	text-underline-offset: 0.18em;
+}
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope a.aflx-muted { color: var(--aflanex-muted); text-decoration: none; }
+/* …but card titles stay as headings (the whole card is the link target). */
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-card .aflx-card__title a:not([class]) { color: var(--aflanex-text); text-decoration: none; }
+:is(.fcom_wp_content, .fcom_supported_wp_content) .aflx-scope .aflx-card .aflx-card__title a:not([class]):hover { color: var(--aflanex-accent); }

@@ -1,0 +1,171 @@
+/*
+ * Aflanex Community: design tokens
+ * ------------------------------------------------------------------
+ * THE single source of truth for colour, type, spacing, radius, depth
+ * and motion. Every other stylesheet (landing, components, portal skin)
+ * reads these variables. Do not hard-code colours anywhere else.
+ *
+ * PROVISIONAL: the official Aflanex visual identity is not yet approved.
+ * To apply the final brand, edit the "Brand palette" block below (and the
+ * matching dark-mode block). Nothing else should need to change.
+ */
+
+:root {
+	/* ---- Brand palette (provisional, replace when identity is final) ---- */
+	--aflanex-ink: #0f1115;            /* primary actions, headings */
+	--aflanex-ink-soft: #2a2e36;
+	--aflanex-accent: #c2410c;         /* "what's next" signal: links, focus, highlights (5.2:1 on white) */
+	--aflanex-accent-strong: #9a3412;
+	--aflanex-accent-soft: #fff1e8;    /* tinted surfaces behind accent content */
+	--aflanex-on-accent: #ffffff;
+
+	/* ---- Neutral surfaces ---- */
+	--aflanex-background: #f5f6f8;
+	--aflanex-surface: #ffffff;
+	--aflanex-surface-sunken: #eef0f3;
+	--aflanex-surface-inverse: #0f1115;
+	--aflanex-text: #14171c;
+	--aflanex-text-secondary: #4a505c;
+	--aflanex-muted: #5f6672;          /* ≥5:1 on surface, background and sunken (WCAG AA) */
+	--aflanex-on-inverse: #f5f6f8;
+	--aflanex-border: #e3e6eb;
+	--aflanex-border-strong: #c9ced6;
+
+	/* ---- Semantic status (always paired with an icon or label) ---- */
+	--aflanex-success: #15803d;
+	--aflanex-success-soft: #ecfdf3;
+	--aflanex-warning: #a16207;
+	--aflanex-warning-soft: #fefbe8;
+	--aflanex-danger: #b91c1c;
+	--aflanex-danger-soft: #fef2f2;
+	--aflanex-info: #1d4ed8;
+	--aflanex-info-soft: #eff4ff;
+
+	/* ---- Project status (label + dot, never colour alone) ---- */
+	--aflanex-status-idea: #5f6672;
+	--aflanex-status-progress: #1d4ed8;
+	--aflanex-status-collab: #c2410c;
+	--aflanex-status-feedback: #a16207;
+	--aflanex-status-complete: #15803d;
+
+	/* ---- Primary / aliases used by components ---- */
+	--aflanex-primary: var(--aflanex-ink);
+	--aflanex-on-primary: #ffffff;
+	--aflanex-link: var(--aflanex-accent);
+	--aflanex-focus: var(--aflanex-accent);
+
+	/* ---- Typography ----
+	 * System stack for speed. To adopt a brand typeface, load it once in
+	 * the theme and prepend it here. */
+	--aflanex-font-sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	--aflanex-font-display: "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	--aflanex-font-mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+
+	--aflanex-text-xs: 0.75rem;
+	--aflanex-text-sm: 0.875rem;
+	--aflanex-text-base: 1rem;
+	--aflanex-text-lg: 1.125rem;
+	--aflanex-text-xl: 1.375rem;
+	--aflanex-text-2xl: 1.75rem;
+	--aflanex-text-3xl: clamp(2rem, 1.4rem + 2.4vw, 2.75rem);
+	--aflanex-text-4xl: clamp(2.5rem, 1.6rem + 4vw, 4.25rem);
+
+	--aflanex-weight-regular: 400;
+	--aflanex-weight-medium: 500;
+	--aflanex-weight-semibold: 600;
+	--aflanex-weight-bold: 700;
+
+	--aflanex-leading-tight: 1.1;
+	--aflanex-leading-snug: 1.3;
+	--aflanex-leading-normal: 1.55;
+	--aflanex-tracking-tight: -0.02em;
+	--aflanex-tracking-wide: 0.08em;
+
+	/* ---- Spacing (4px base) ---- */
+	--aflanex-space-1: 0.25rem;
+	--aflanex-space-2: 0.5rem;
+	--aflanex-space-3: 0.75rem;
+	--aflanex-space-4: 1rem;
+	--aflanex-space-5: 1.25rem;
+	--aflanex-space-6: 1.5rem;
+	--aflanex-space-8: 2rem;
+	--aflanex-space-10: 2.5rem;
+	--aflanex-space-12: 3rem;
+	--aflanex-space-16: 4rem;
+	--aflanex-space-24: 6rem;
+
+	/* ---- Radius ---- */
+	--aflanex-radius-sm: 6px;
+	--aflanex-radius: 10px;
+	--aflanex-radius-lg: 16px;
+	--aflanex-radius-pill: 999px;
+
+	/* ---- Depth (restrained) ---- */
+	--aflanex-shadow-sm: 0 1px 2px rgb(15 17 21 / 0.06);
+	--aflanex-shadow: 0 1px 2px rgb(15 17 21 / 0.05), 0 4px 12px rgb(15 17 21 / 0.05);
+	--aflanex-shadow-lg: 0 2px 6px rgb(15 17 21 / 0.06), 0 16px 40px rgb(15 17 21 / 0.08);
+
+	/* ---- Layout ---- */
+	--aflanex-container: 1180px;
+	--aflanex-container-narrow: 760px;
+	--aflanex-gutter: clamp(1rem, 0.6rem + 1.8vw, 2rem);
+	--aflanex-header-height: 64px;
+	--aflanex-tap-target: 44px;
+
+	/* Breakpoints (reference only; CSS vars can't be used in media queries):
+	 *   sm 600px · md 768px · lg 1024px · xl 1280px */
+
+	/* ---- Motion ---- */
+	--aflanex-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+	--aflanex-duration: 160ms;
+
+	color-scheme: light;
+}
+
+/* Dark mode. The FluentCommunity portal toggles `html.dark`. */
+html.dark {
+	--aflanex-ink: #f3f4f6;
+	--aflanex-ink-soft: #d9dce1;
+	--aflanex-accent: #fb923c;
+	--aflanex-accent-strong: #fdba74;
+	--aflanex-accent-soft: #2b1a10;
+	--aflanex-on-accent: #111318;
+
+	--aflanex-background: #0e1013;
+	--aflanex-surface: #171a1f;
+	--aflanex-surface-sunken: #1f232a;
+	--aflanex-surface-inverse: #f3f4f6;
+	--aflanex-text: #eef0f3;
+	--aflanex-text-secondary: #b4bac4;
+	--aflanex-muted: #9aa1ad;
+	--aflanex-on-inverse: #111318;
+	--aflanex-border: #2a2f37;
+	--aflanex-border-strong: #3a404a;
+
+	--aflanex-success: #4ade80;
+	--aflanex-success-soft: #0f2418;
+	--aflanex-warning: #facc15;
+	--aflanex-warning-soft: #2a230c;
+	--aflanex-danger: #f87171;
+	--aflanex-danger-soft: #2c1414;
+	--aflanex-info: #93b4ff;
+	--aflanex-info-soft: #131d33;
+
+	--aflanex-status-idea: #9aa1ad;
+	--aflanex-status-progress: #93b4ff;
+	--aflanex-status-collab: #fb923c;
+	--aflanex-status-feedback: #facc15;
+	--aflanex-status-complete: #4ade80;
+
+	--aflanex-on-primary: #111318;
+
+	--aflanex-shadow-sm: none;
+	--aflanex-shadow: 0 0 0 1px rgb(255 255 255 / 0.04);
+	--aflanex-shadow-lg: 0 12px 40px rgb(0 0 0 / 0.45);
+
+	color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root { --aflanex-duration: 0ms; }
+}

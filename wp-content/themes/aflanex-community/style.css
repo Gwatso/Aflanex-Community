@@ -1,0 +1,11 @@
+/*
+Theme Name:   Aflanex Community
+Description:  Presentation layer for Aflanex Community: design tokens, the temporary brand mark, the public entry page and the templates for Projects, People and Portfolio. Business logic lives in the "Aflanex Community" plugin.
+Author:       Aflanex
+Template:     hello-elementor
+Version:      1.0.0
+Requires PHP: 8.0
+Text Domain:  aflanex-community
+*/
+
+/* Styles live in assets/css (tokens.css → components.css → portal.css / landing.css). */
